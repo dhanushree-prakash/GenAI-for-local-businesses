@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Marketing Content Generator</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+
+  <div class="bg-white p-6 rounded-2xl shadow-lg w-full max-w-lg">
+    <h1 class="text-2xl font-bold mb-4 text-center">✨ Generate Marketing Content ✨</h1>
+    
+    <form id="contentForm" class="space-y-4">
+      <div>
+        <label class="block font-medium">Business Name</label>
+        <input type="text" id="business_name" class="w-full p-2 border rounded" required placeholder="Enter your business name" title="Business Name" />
+      </div>
+      <div>
+        <label class="block font-medium">Business Category</label>
+        <input type="text" id="category" class="w-full p-2 border rounded" required placeholder="Enter business category" title="Business Category" />
+      </div>
+      <div>
+        <label class="block font-medium">Content Type</label>
+        <input type="text" id="content_type" placeholder="e.g. Social Media Post" class="w-full p-2 border rounded" required />
+      </div>
+      <div>
+        <label class="block font-medium">Language</label>
+        <input type="text" id="language" placeholder="e.g. Hindi, Tamil" class="w-full p-2 border rounded" required />
+      </div>
+      <div>
+        <label class="block font-medium">Offer or Description</label>
+        <textarea id="detail" class="w-full p-2 border rounded" rows="3" required title="Offer or Description" placeholder="Enter offer or description"></textarea>
+      </div>
+      <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700">
+        Generate
+      </button>
+    </form>
+
+    <div id="result" class="mt-6 p-4 bg-gray-50 border rounded hidden"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
